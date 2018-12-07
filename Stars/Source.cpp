@@ -11,17 +11,17 @@ int main() {
 
 	cout << endl << endl;
 
-	for (int i = 0; i < numOfRowsToCenter + (numOfRowsToCenter - 1); i++) {
+	for (int i = 1; i <= numOfRowsToCenter + (numOfRowsToCenter - 1); i++) {
 
-		if (i + 1 < numOfRowsToCenter) {
+		if (i < numOfRowsToCenter) {
 
-			stars = 2 * i + 1;
+			stars = 2 * (i - 1) + 1;
 			//cout << endl << setw(2 * numOfRowsToCenter + 1);
 
 		}
-		else if(i + 1 > numOfRowsToCenter){
+		else if(i > numOfRowsToCenter){
 
-			stars = (2 * numOfRowsToCenter + 1) - 2 * ((i + 1) - numOfRowsToCenter + 1);
+			stars = (2 * (numberOfRowsToCenter - 1) + 1) - (2 * (i - ();
 
 		}
 		else {
